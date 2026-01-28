@@ -1,0 +1,147 @@
+{
+  "app": {
+    "title": "PC Parts Shop",
+    "loading": "Verifying authentication..."
+  },
+  "header": {
+    "title": "PC Parts Shop",
+    "nav": {
+      "products": "Products",
+      "orders": "Order History"
+    },
+    "user": {
+      "greeting": "{{firstName}} {{lastName}}",
+      "logout": "Logout",
+      "login": "Login"
+    }
+  },
+  "login": {
+    "title": "PC Parts Shop",
+    "subtitle": "Login",
+    "email": "Email Address",
+    "emailPlaceholder": "tanaka@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter password",
+    "loginButton": "Login",
+    "loginError": "Login failed",
+    "demoAccounts": "Demo Accounts"
+  },
+  "productList": {
+    "title": "Products",
+    "loading": "Loading products...",
+    "resultsCount_one": "{{count}} product found",
+    "resultsCount_other": "{{count}} products found",
+    "addedToCart": "Added to cart",
+    "addToCartError": "Failed to add to cart",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "productDetail": {
+    "loading": "Loading product...",
+    "notFound": "Product not found",
+    "backToList": "Back to Products",
+    "addedToCart": "Added {{quantity}} {{name}} to cart",
+    "addToCartError": "Failed to add to cart",
+    "inStock": "In Stock ({{count}} available)",
+    "outOfStock": "Out of Stock",
+    "reviews_one": "{{count}} review",
+    "reviews_other": "{{count}} reviews",
+    "description": "Product Description",
+    "specifications": "Specifications",
+    "quantity": "Quantity",
+    "addToCart": "Add to Cart"
+  },
+  "productFilter": {
+    "category": "Category",
+    "all": "All",
+    "search": "Search",
+    "searchPlaceholder": "Search products...",
+    "sort": "Sort",
+    "sortOptions": {
+      "nameAsc": "Name (A-Z)",
+      "nameDesc": "Name (Z-A)",
+      "priceAsc": "Price (Low to High)",
+      "priceDesc": "Price (High to Low)",
+      "ratingDesc": "Rating (High to Low)"
+    }
+  },
+  "productCard": {
+    "addToCart": "Add to Cart",
+    "inStock": "In Stock ({{count}} available)",
+    "outOfStock": "Out of Stock"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": {
+      "title": "Your cart is empty",
+      "message": "Add products to your cart to start shopping",
+      "button": "Browse Products"
+    },
+    "confirmClear": "Are you sure you want to clear all items from your cart?"
+  },
+  "cartItem": {
+    "remove": "Remove"
+  },
+  "cartSummary": {
+    "title": "Order Summary",
+    "itemCount": "Items",
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} items",
+    "subtotal": "Subtotal",
+    "total": "Total (Tax Included)",
+    "checkout": "Proceed to Checkout",
+    "clearCart": "Clear Cart"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shippingInfo": "Shipping Information",
+    "postalCode": "Postal Code",
+    "postalCodePlaceholder": "100-0001",
+    "prefecture": "Prefecture",
+    "prefecturePlaceholder": "Tokyo",
+    "city": "City",
+    "cityPlaceholder": "Chiyoda-ku",
+    "street": "Street Address",
+    "streetPlaceholder": "1-1-1 Marunouchi",
+    "backToCart": "Back to Cart",
+    "confirmOrder": "Confirm Order",
+    "orderError": "Failed to process order",
+    "orderSummary": "Order Summary",
+    "quantity": "Quantity: {{count}}",
+    "subtotal": "Subtotal",
+    "total": "Total (Tax Included)"
+  },
+  "orderComplete": {
+    "title": "Thank you for your order!",
+    "message": "Your order has been successfully placed.",
+    "orderNumber": "Order Number",
+    "orderDate": "Order Date",
+    "total": "Total Amount",
+    "status": "Status",
+    "statusConfirmed": "Confirmed",
+    "viewOrders": "View Order History",
+    "continueShopping": "Continue Shopping"
+  },
+  "orderHistory": {
+    "title": "Order History",
+    "loading": "Loading order history...",
+    "error": "An error occurred: {{message}}",
+    "empty": {
+      "title": "No order history",
+      "message": "You haven't placed any orders yet",
+      "button": "Browse Products"
+    },
+    "orderNumber": "Order Number",
+    "itemCount": "Items",
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} items",
+    "total": "Total Amount",
+    "status": "Status",
+    "statusConfirmed": "Confirmed"
+  },
+  "loading": {
+    "default": "Loading..."
+  }
+}

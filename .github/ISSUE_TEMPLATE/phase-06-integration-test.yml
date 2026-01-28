@@ -1,0 +1,69 @@
+name: "📋 [結合テスト] 工程タスク"
+description: "結合テストフェーズ用テンプレート"
+title: "[多言語対応] 結合テスト"
+labels: ["task", "testing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ 設定忘れずに
+        - **Milestone**: 該当するマイルストーンを設定
+        - **親Issue**: 親プロジェクトIssueにリンク
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 工程: 6. 結合テスト
+
+  - type: input
+    id: duration
+    attributes:
+      label: "⏱️ 想定期間"
+      value: "2日"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 タスク概要"
+      value: |
+        機能間連携の観点で多言語対応をテストする。
+        
+        ### 実施内容
+        1. 画面遷移時の言語保持確認
+           - ページ間で言語設定が維持されるか
+        2. フロントエンド・バックエンド連携テスト
+           - API経由での多言語データ取得
+           - 商品情報の言語切り替え
+        3. カート・注文フローの多言語テスト
+           - カート追加〜注文完了までの一連の流れ
+        4. 認証機能との連携テスト
+           - ログイン前後での言語設定
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: "📦 成果物"
+      value: |
+        - [ ] 結合テスト仕様書
+        - [ ] 結合テスト結果報告書
+        - [ ] 不具合一覧（発見時）
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "✅ 完了条件"
+      value: |
+        - [ ] 全結合テストケースが完了
+        - [ ] 画面遷移時に言語設定が維持される
+        - [ ] API連携が正常に動作する
+        - [ ] 発見された不具合が修正済み
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "🔗 依存関係"
+      value: |
+        **先行タスク**: #単体テスト
+        **後続タスク**: システムテスト

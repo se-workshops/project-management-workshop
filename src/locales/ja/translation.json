@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "PC Parts Shop",
+    "loading": "認証情報を確認しています..."
+  },
+  "header": {
+    "title": "PC Parts Shop",
+    "nav": {
+      "products": "商品一覧",
+      "orders": "注文履歴"
+    },
+    "user": {
+      "greeting": "{{lastName}} {{firstName}}さん",
+      "logout": "ログアウト",
+      "login": "ログイン"
+    }
+  },
+  "login": {
+    "title": "PC Parts Shop",
+    "subtitle": "ログイン",
+    "email": "メールアドレス",
+    "emailPlaceholder": "tanaka@example.com",
+    "password": "パスワード",
+    "passwordPlaceholder": "パスワードを入力",
+    "loginButton": "ログイン",
+    "loginError": "ログインに失敗しました",
+    "demoAccounts": "デモアカウント"
+  },
+  "productList": {
+    "title": "商品一覧",
+    "loading": "商品を読み込んでいます...",
+    "resultsCount": "{{count}}件の商品が見つかりました",
+    "addedToCart": "カートに追加しました",
+    "addToCartError": "カートへの追加に失敗しました",
+    "pagination": {
+      "previous": "前へ",
+      "next": "次へ"
+    }
+  },
+  "productDetail": {
+    "loading": "商品を読み込んでいます...",
+    "notFound": "商品が見つかりませんでした",
+    "backToList": "商品一覧に戻る",
+    "addedToCart": "{{name}}を{{quantity}}個カートに追加しました",
+    "addToCartError": "カートへの追加に失敗しました",
+    "inStock": "在庫あり ({{count}}個)",
+    "outOfStock": "在庫切れ",
+    "reviews": "{{count}}件のレビュー",
+    "description": "商品説明",
+    "specifications": "仕様",
+    "quantity": "数量",
+    "addToCart": "カートに追加"
+  },
+  "productFilter": {
+    "category": "カテゴリ",
+    "all": "すべて",
+    "search": "検索",
+    "searchPlaceholder": "商品を検索...",
+    "sort": "並び替え",
+    "sortOptions": {
+      "nameAsc": "名前 (昇順)",
+      "nameDesc": "名前 (降順)",
+      "priceAsc": "価格 (安い順)",
+      "priceDesc": "価格 (高い順)",
+      "ratingDesc": "評価 (高い順)"
+    }
+  },
+  "productCard": {
+    "addToCart": "カートに追加",
+    "inStock": "在庫あり ({{count}}個)",
+    "outOfStock": "在庫切れ"
+  },
+  "cart": {
+    "title": "ショッピングカート",
+    "empty": {
+      "title": "カートは空です",
+      "message": "商品をカートに追加して注文を始めましょう",
+      "button": "商品を見る"
+    },
+    "confirmClear": "カート内の全商品を削除しますか？"
+  },
+  "cartItem": {
+    "remove": "削除"
+  },
+  "cartSummary": {
+    "title": "注文サマリー",
+    "itemCount": "商品数",
+    "items": "{{count}}点",
+    "subtotal": "小計",
+    "total": "合計 (税込)",
+    "checkout": "注文手続きへ",
+    "clearCart": "カートをクリア"
+  },
+  "checkout": {
+    "title": "注文確認",
+    "shippingInfo": "配送先情報",
+    "postalCode": "郵便番号",
+    "postalCodePlaceholder": "100-0001",
+    "prefecture": "都道府県",
+    "prefecturePlaceholder": "東京都",
+    "city": "市区町村",
+    "cityPlaceholder": "千代田区",
+    "street": "番地・建物名",
+    "streetPlaceholder": "丸の内1-1-1",
+    "backToCart": "カートに戻る",
+    "confirmOrder": "注文を確定する",
+    "orderError": "注文の処理に失敗しました",
+    "orderSummary": "注文内容",
+    "quantity": "数量: {{count}}",
+    "subtotal": "小計",
+    "total": "合計 (税込)"
+  },
+  "orderComplete": {
+    "title": "ご注文ありがとうございます！",
+    "message": "注文が正常に完了しました。",
+    "orderNumber": "注文番号",
+    "orderDate": "注文日時",
+    "total": "合計金額",
+    "status": "ステータス",
+    "statusConfirmed": "確認済み",
+    "viewOrders": "注文履歴を見る",
+    "continueShopping": "買い物を続ける"
+  },
+  "orderHistory": {
+    "title": "注文履歴",
+    "loading": "注文履歴を読み込んでいます...",
+    "error": "エラーが発生しました: {{message}}",
+    "empty": {
+      "title": "注文履歴がありません",
+      "message": "まだ商品を注文していません",
+      "button": "商品を見る"
+    },
+    "orderNumber": "注文番号",
+    "itemCount": "商品数",
+    "items": "{{count}}点",
+    "total": "合計金額",
+    "status": "ステータス",
+    "statusConfirmed": "確認済み"
+  },
+  "loading": {
+    "default": "読み込み中..."
+  }
+}

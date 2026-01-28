@@ -1,0 +1,10 @@
+[
+  { "id": "cat-001", "name": "CPU", "description": "プロセッサー", "icon": "cpu" },
+  { "id": "cat-002", "name": "GPU", "description": "グラフィックカード", "icon": "gpu" },
+  { "id": "cat-003", "name": "メモリ", "description": "RAM", "icon": "memory" },
+  { "id": "cat-004", "name": "ストレージ", "description": "SSD/HDD", "icon": "storage" },
+  { "id": "cat-005", "name": "マザーボード", "description": "メインボード", "icon": "motherboard" },
+  { "id": "cat-006", "name": "電源ユニット", "description": "PSU", "icon": "power" },
+  { "id": "cat-007", "name": "PCケース", "description": "筐体", "icon": "case" },
+  { "id": "cat-008", "name": "周辺機器", "description": "キーボード・マウス等", "icon": "peripheral" }
+]

@@ -1,0 +1,612 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Intellon Core X9-14900K",
+    "categoryId": "cat-001",
+    "price": 89800,
+    "stock": 15,
+    "description": "第14世代Intellon Coreプロセッサー。24コア/32スレッドの最高峰CPU。",
+    "specifications": {
+      "コア数": "24 (8P+16E)",
+      "スレッド数": "32",
+      "ベースクロック": "3.2GHz",
+      "ブーストクロック": "6.0GHz",
+      "TDP": "125W",
+      "ソケット": "LGA1700"
+    },
+    "imageUrl": "/images/products/prod-001.png",
+    "brand": "Intellon",
+    "rating": 4.8,
+    "reviewCount": 124,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-002",
+    "name": "Intellon Core X7-14700K",
+    "categoryId": "cat-001",
+    "price": 62800,
+    "stock": 20,
+    "description": "優れたパフォーマンスとコストパフォーマンスを両立したハイエンドCPU。",
+    "specifications": {
+      "コア数": "20 (8P+12E)",
+      "スレッド数": "28",
+      "ベースクロック": "3.4GHz",
+      "ブーストクロック": "5.6GHz",
+      "TDP": "125W",
+      "ソケット": "LGA1700"
+    },
+    "imageUrl": "/images/products/prod-002.png",
+    "brand": "Intellon",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-003",
+    "name": "AMP Ryzon 9 7950X",
+    "categoryId": "cat-001",
+    "price": 79800,
+    "stock": 12,
+    "description": "16コア/32スレッドの高性能AMP Ryzonプロセッサー。",
+    "specifications": {
+      "コア数": "16",
+      "スレッド数": "32",
+      "ベースクロック": "4.5GHz",
+      "ブーストクロック": "5.7GHz",
+      "TDP": "170W",
+      "ソケット": "AM5"
+    },
+    "imageUrl": "/images/products/prod-003.png",
+    "brand": "AMP",
+    "rating": 4.9,
+    "reviewCount": 156,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-004",
+    "name": "AMP Ryzon 7 7800X3D",
+    "categoryId": "cat-001",
+    "price": 59800,
+    "stock": 18,
+    "description": "3D V-Cache技術搭載でゲーミングに最適なCPU。",
+    "specifications": {
+      "コア数": "8",
+      "スレッド数": "16",
+      "ベースクロック": "4.2GHz",
+      "ブーストクロック": "5.0GHz",
+      "TDP": "120W",
+      "ソケット": "AM5"
+    },
+    "imageUrl": "/images/products/prod-004.png",
+    "brand": "AMP",
+    "rating": 4.8,
+    "reviewCount": 203,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-005",
+    "name": "Intellon Core X5-14600K",
+    "categoryId": "cat-001",
+    "price": 45800,
+    "stock": 25,
+    "description": "コストパフォーマンスに優れたミドルレンジCPU。",
+    "specifications": {
+      "コア数": "14 (6P+8E)",
+      "スレッド数": "20",
+      "ベースクロック": "3.5GHz",
+      "ブーストクロック": "5.3GHz",
+      "TDP": "125W",
+      "ソケット": "LGA1700"
+    },
+    "imageUrl": "/images/products/prod-005.png",
+    "brand": "Intellon",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-006",
+    "name": "NVVIDIA GraphForce RTX 4090",
+    "categoryId": "cat-002",
+    "price": 298000,
+    "stock": 8,
+    "description": "最高峰のグラフィックスカード。4K、8Kゲーミングに対応。",
+    "specifications": {
+      "CUDA コア": "16384",
+      "ベースクロック": "2.23GHz",
+      "ブーストクロック": "2.52GHz",
+      "メモリ": "24GB GDDR6X",
+      "メモリバス": "384-bit",
+      "TDP": "450W"
+    },
+    "imageUrl": "/images/products/prod-006.png",
+    "brand": "NVVIDIA",
+    "rating": 4.9,
+    "reviewCount": 245,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-007",
+    "name": "NVVIDIA GraphForce RTX 4080",
+    "categoryId": "cat-002",
+    "price": 198000,
+    "stock": 15,
+    "description": "高性能グラフィックスカード。4Kゲーミングに最適。",
+    "specifications": {
+      "CUDA コア": "9728",
+      "ベースクロック": "2.21GHz",
+      "ブーストクロック": "2.51GHz",
+      "メモリ": "16GB GDDR6X",
+      "メモリバス": "256-bit",
+      "TDP": "320W"
+    },
+    "imageUrl": "/images/products/prod-007.png",
+    "brand": "NVVIDIA",
+    "rating": 4.7,
+    "reviewCount": 178,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-008",
+    "name": "NVVIDIA GraphForce RTX 4070 Ti",
+    "categoryId": "cat-002",
+    "price": 128000,
+    "stock": 22,
+    "description": "バランスの良いハイエンドグラフィックスカード。",
+    "specifications": {
+      "CUDA コア": "7680",
+      "ベースクロック": "2.31GHz",
+      "ブーストクロック": "2.61GHz",
+      "メモリ": "12GB GDDR6X",
+      "メモリバス": "192-bit",
+      "TDP": "285W"
+    },
+    "imageUrl": "/images/products/prod-008.png",
+    "brand": "NVVIDIA",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-009",
+    "name": "AMP Radon RX 7900 XTX",
+    "categoryId": "cat-002",
+    "price": 168000,
+    "stock": 10,
+    "description": "AMP最高峰のグラフィックスカード。優れた性能と価格。",
+    "specifications": {
+      "ストリームプロセッサ": "6144",
+      "ゲームクロック": "2.3GHz",
+      "ブーストクロック": "2.5GHz",
+      "メモリ": "24GB GDDR6",
+      "メモリバス": "384-bit",
+      "TDP": "355W"
+    },
+    "imageUrl": "/images/products/prod-009.png",
+    "brand": "AMP",
+    "rating": 4.5,
+    "reviewCount": 92,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-010",
+    "name": "AMP Radon RX 7800 XT",
+    "categoryId": "cat-002",
+    "price": 78000,
+    "stock": 18,
+    "description": "1440pゲーミングに最適なミドルハイGPU。",
+    "specifications": {
+      "ストリームプロセッサ": "3840",
+      "ゲームクロック": "2.12GHz",
+      "ブーストクロック": "2.43GHz",
+      "メモリ": "16GB GDDR6",
+      "メモリバス": "256-bit",
+      "TDP": "263W"
+    },
+    "imageUrl": "/images/products/prod-010.png",
+    "brand": "AMP",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-011",
+    "name": "G-Skill Tridante Z5 DDR5-6000 32GB",
+    "categoryId": "cat-003",
+    "price": 28800,
+    "stock": 30,
+    "description": "高速DDR5メモリ。オーバークロック対応。",
+    "specifications": {
+      "容量": "32GB (16GB x2)",
+      "規格": "DDR5",
+      "動作周波数": "6000MHz",
+      "レイテンシ": "CL30",
+      "電圧": "1.35V"
+    },
+    "imageUrl": "/images/products/prod-011.png",
+    "brand": "G-Skill",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-012",
+    "name": "Corshair Vengeanze DDR5-5600 32GB",
+    "categoryId": "cat-003",
+    "price": 24800,
+    "stock": 35,
+    "description": "信頼性の高いCorshair製DDR5メモリ。",
+    "specifications": {
+      "容量": "32GB (16GB x2)",
+      "規格": "DDR5",
+      "動作周波数": "5600MHz",
+      "レイテンシ": "CL36",
+      "電圧": "1.25V"
+    },
+    "imageUrl": "/images/products/prod-012.png",
+    "brand": "Corshair",
+    "rating": 4.6,
+    "reviewCount": 203,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-013",
+    "name": "Kingstown FURY Beest DDR5-5200 32GB",
+    "categoryId": "cat-003",
+    "price": 22800,
+    "stock": 40,
+    "description": "コストパフォーマンスに優れたDDR5メモリ。",
+    "specifications": {
+      "容量": "32GB (16GB x2)",
+      "規格": "DDR5",
+      "動作周波数": "5200MHz",
+      "レイテンシ": "CL40",
+      "電圧": "1.25V"
+    },
+    "imageUrl": "/images/products/prod-013.png",
+    "brand": "Kingstown",
+    "rating": 4.5,
+    "reviewCount": 178,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-014",
+    "name": "Cruciel DDR5-4800 32GB",
+    "categoryId": "cat-003",
+    "price": 18800,
+    "stock": 45,
+    "description": "エントリークラスのDDR5メモリ。安定性重視。",
+    "specifications": {
+      "容量": "32GB (16GB x2)",
+      "規格": "DDR5",
+      "動作周波数": "4800MHz",
+      "レイテンシ": "CL40",
+      "電圧": "1.1V"
+    },
+    "imageUrl": "/images/products/prod-014.png",
+    "brand": "Cruciel",
+    "rating": 4.4,
+    "reviewCount": 145,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-015",
+    "name": "Samsong 990 PRO 2TB NVMe",
+    "categoryId": "cat-004",
+    "price": 28800,
+    "stock": 25,
+    "description": "最高速のPCIe 4.0 NVMe SSD。",
+    "specifications": {
+      "容量": "2TB",
+      "インターフェース": "PCIe 4.0 x4",
+      "フォームファクタ": "M.2 2280",
+      "読込速度": "7450 MB/s",
+      "書込速度": "6900 MB/s"
+    },
+    "imageUrl": "/images/products/prod-015.png",
+    "brand": "Samsong",
+    "rating": 4.8,
+    "reviewCount": 267,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-016",
+    "name": "WesternD Black SN850X 2TB NVMe",
+    "categoryId": "cat-004",
+    "price": 26800,
+    "stock": 30,
+    "description": "ゲーミング向けの高速NVMe SSD。",
+    "specifications": {
+      "容量": "2TB",
+      "インターフェース": "PCIe 4.0 x4",
+      "フォームファクタ": "M.2 2280",
+      "読込速度": "7300 MB/s",
+      "書込速度": "6600 MB/s"
+    },
+    "imageUrl": "/images/products/prod-016.png",
+    "brand": "WesternD",
+    "rating": 4.7,
+    "reviewCount": 198,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-017",
+    "name": "Cruciel T700 2TB NVMe",
+    "categoryId": "cat-004",
+    "price": 32800,
+    "stock": 20,
+    "description": "PCIe 5.0対応の次世代NVMe SSD。",
+    "specifications": {
+      "容量": "2TB",
+      "インターフェース": "PCIe 5.0 x4",
+      "フォームファクタ": "M.2 2280",
+      "読込速度": "12400 MB/s",
+      "書込速度": "11800 MB/s"
+    },
+    "imageUrl": "/images/products/prod-017.png",
+    "brand": "Cruciel",
+    "rating": 4.9,
+    "reviewCount": 89,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-018",
+    "name": "Seagait FireCuda 530 2TB",
+    "categoryId": "cat-004",
+    "price": 24800,
+    "stock": 28,
+    "description": "コストパフォーマンスに優れたNVMe SSD。",
+    "specifications": {
+      "容量": "2TB",
+      "インターフェース": "PCIe 4.0 x4",
+      "フォームファクタ": "M.2 2280",
+      "読込速度": "7300 MB/s",
+      "書込速度": "6900 MB/s"
+    },
+    "imageUrl": "/images/products/prod-018.png",
+    "brand": "Seagait",
+    "rating": 4.6,
+    "reviewCount": 143,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-019",
+    "name": "AZUS ROG STRIX Z790-E GAMING",
+    "categoryId": "cat-005",
+    "price": 68800,
+    "stock": 12,
+    "description": "Intel Z790チップセット搭載のハイエンドマザーボード。",
+    "specifications": {
+      "チップセット": "Intel Z790",
+      "ソケット": "LGA1700",
+      "フォームファクタ": "ATX",
+      "メモリスロット": "4 x DDR5",
+      "最大メモリ": "128GB"
+    },
+    "imageUrl": "/images/products/prod-019.png",
+    "brand": "AZUS",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-020",
+    "name": "MSE MPG X670E CARBON WIFI",
+    "categoryId": "cat-005",
+    "price": 62800,
+    "stock": 15,
+    "description": "AMD X670Eチップセット搭載の高性能マザーボード。",
+    "specifications": {
+      "チップセット": "AMD X670E",
+      "ソケット": "AM5",
+      "フォームファクタ": "ATX",
+      "メモリスロット": "4 x DDR5",
+      "最大メモリ": "128GB"
+    },
+    "imageUrl": "/images/products/prod-020.png",
+    "brand": "MSE",
+    "rating": 4.7,
+    "reviewCount": 134,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-021",
+    "name": "GIGABITE B760 AORUS ELITE",
+    "categoryId": "cat-005",
+    "price": 28800,
+    "stock": 20,
+    "description": "コストパフォーマンスに優れたミドルレンジマザーボード。",
+    "specifications": {
+      "チップセット": "Intel B760",
+      "ソケット": "LGA1700",
+      "フォームファクタ": "ATX",
+      "メモリスロット": "4 x DDR5",
+      "最大メモリ": "128GB"
+    },
+    "imageUrl": "/images/products/prod-021.png",
+    "brand": "GIGABITE",
+    "rating": 4.5,
+    "reviewCount": 98,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-022",
+    "name": "Corshair RM1000x 1000W 80+ Gold",
+    "categoryId": "cat-006",
+    "price": 28800,
+    "stock": 25,
+    "description": "高効率で安定した電力供給を実現する1000W電源。",
+    "specifications": {
+      "出力": "1000W",
+      "効率": "80 PLUS Gold",
+      "モジュラー": "フルモジュラー",
+      "ファン": "135mm",
+      "保証": "10年"
+    },
+    "imageUrl": "/images/products/prod-022.png",
+    "brand": "Corshair",
+    "rating": 4.8,
+    "reviewCount": 245,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-023",
+    "name": "Seasonix FOCUS GX-850 850W 80+ Gold",
+    "categoryId": "cat-006",
+    "price": 22800,
+    "stock": 30,
+    "description": "信頼性の高いSeasonix製850W電源。",
+    "specifications": {
+      "出力": "850W",
+      "効率": "80 PLUS Gold",
+      "モジュラー": "フルモジュラー",
+      "ファン": "120mm",
+      "保証": "10年"
+    },
+    "imageUrl": "/images/products/prod-023.png",
+    "brand": "Seasonix",
+    "rating": 4.7,
+    "reviewCount": 198,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-024",
+    "name": "NZXT H7 Flow ミドルタワーケース",
+    "categoryId": "cat-007",
+    "price": 18800,
+    "stock": 20,
+    "description": "エアフローに優れたモダンなPCケース。",
+    "specifications": {
+      "タイプ": "ミドルタワー",
+      "対応マザーボード": "ATX, Micro-ATX, Mini-ITX",
+      "ドライブベイ": "2.5インチ x4",
+      "最大GPU長": "400mm",
+      "最大CPUクーラー高": "185mm"
+    },
+    "imageUrl": "/images/products/prod-024.png",
+    "brand": "NZXT",
+    "rating": 4.6,
+    "reviewCount": 167,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-025",
+    "name": "Fractial Design Torrent ミドルタワー",
+    "categoryId": "cat-007",
+    "price": 32800,
+    "stock": 15,
+    "description": "最高のエアフローを実現するハイエンドケース。",
+    "specifications": {
+      "タイプ": "ミドルタワー",
+      "対応マザーボード": "E-ATX, ATX, Micro-ATX, Mini-ITX",
+      "ドライブベイ": "2.5インチ x4",
+      "最大GPU長": "461mm",
+      "最大CPUクーラー高": "188mm"
+    },
+    "imageUrl": "/images/products/prod-025.png",
+    "brand": "Fractial Design",
+    "rating": 4.8,
+    "reviewCount": 134,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-026",
+    "name": "Lian Lee O11 Dynamic EVO",
+    "categoryId": "cat-007",
+    "price": 24800,
+    "stock": 18,
+    "description": "水冷に最適なガラスパネル採用ケース。",
+    "specifications": {
+      "タイプ": "ミドルタワー",
+      "対応マザーボード": "E-ATX, ATX, Micro-ATX, Mini-ITX",
+      "ドライブベイ": "2.5インチ x6",
+      "最大GPU長": "420mm",
+      "最大CPUクーラー高": "167mm"
+    },
+    "imageUrl": "/images/products/prod-026.png",
+    "brand": "Lian Lee",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-027",
+    "name": "Logitek G PRO X ゲーミングキーボード",
+    "categoryId": "cat-008",
+    "price": 18800,
+    "stock": 35,
+    "description": "プロゲーマー向けのメカニカルキーボード。",
+    "specifications": {
+      "タイプ": "メカニカル",
+      "スイッチ": "GX Blue/Brown/Red",
+      "キー配列": "日本語配列",
+      "接続": "USB",
+      "バックライト": "RGB"
+    },
+    "imageUrl": "/images/products/prod-027.png",
+    "brand": "Logitek",
+    "rating": 4.6,
+    "reviewCount": 234,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-028",
+    "name": "Razr DeathAdder V3 Pro",
+    "categoryId": "cat-008",
+    "price": 16800,
+    "stock": 40,
+    "description": "ワイヤレスゲーミングマウス。高精度センサー搭載。",
+    "specifications": {
+      "タイプ": "ワイヤレス",
+      "センサー": "Focus Pro 30K",
+      "DPI": "最大 30000",
+      "ボタン数": "5",
+      "バッテリー": "最大90時間"
+    },
+    "imageUrl": "/images/products/prod-028.png",
+    "brand": "Razr",
+    "rating": 4.7,
+    "reviewCount": 312,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-029",
+    "name": "LJ 27GN950-B 4K 144Hz ゲーミングモニター",
+    "categoryId": "cat-008",
+    "price": 98000,
+    "stock": 10,
+    "description": "27インチ4K解像度の高性能ゲーミングモニター。",
+    "specifications": {
+      "サイズ": "27インチ",
+      "解像度": "3840x2160 (4K)",
+      "リフレッシュレート": "144Hz",
+      "応答速度": "1ms",
+      "パネル": "IPS"
+    },
+    "imageUrl": "/images/products/prod-029.png",
+    "brand": "LJ",
+    "rating": 4.8,
+    "reviewCount": 178,
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod-030",
+    "name": "BenQ ZOWEE XL2546K 240Hz モニター",
+    "categoryId": "cat-008",
+    "price": 68000,
+    "stock": 15,
+    "description": "eスポーツプロ向けの240Hz駆動モニター。",
+    "specifications": {
+      "サイズ": "24.5インチ",
+      "解像度": "1920x1080 (FHD)",
+      "リフレッシュレート": "240Hz",
+      "応答速度": "0.5ms",
+      "パネル": "TN"
+    },
+    "imageUrl": "/images/products/prod-030.png",
+    "brand": "BenQ",
+    "rating": 4.6,
+    "reviewCount": 145,
+    "createdAt": "2024-01-15T00:00:00Z"
+  }
+]

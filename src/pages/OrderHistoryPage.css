@@ -1,0 +1,165 @@
+.order-history-page {
+  min-height: calc(100vh - 200px);
+  background-color: #f5f5f5;
+  padding: 2rem 0;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.page-container h1 {
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+  color: #333;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-id {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.order-id .label {
+  color: #666;
+}
+
+.order-id .value {
+  color: #007bff;
+}
+
+.order-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.order-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.order-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-info-row .label {
+  color: #666;
+  font-weight: 500;
+}
+
+.order-info-row .price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-confirmed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-shipped {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.empty-orders {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.empty-orders-content {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-orders-content h2 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.empty-orders-content p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 2rem 0;
+}
+
+.error-container {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.error-container p {
+  color: #dc3545;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 0 1rem;
+  }
+
+  .page-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .order-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .order-body {
+    padding: 1rem;
+  }
+}

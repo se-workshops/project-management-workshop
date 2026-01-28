@@ -1,0 +1,87 @@
+name: "📋 [リリース] 工程タスク"
+description: "リリースフェーズ用テンプレート"
+title: "[多言語対応] リリース"
+labels: ["task", "release"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ 設定忘れずに
+        - **Milestone**: 該当するマイルストーンを設定
+        - **親Issue**: 親プロジェクトIssueにリンク
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 工程: 9. リリース
+
+  - type: input
+    id: duration
+    attributes:
+      label: "⏱️ 想定期間"
+      value: "1日"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 タスク概要"
+      value: |
+        多言語対応機能を本番環境にデプロイする。
+        
+        ### 実施内容
+        1. リリース準備
+           - リリースノート作成
+           - デプロイ手順確認
+           - ロールバック手順確認
+        2. 本番デプロイ
+           - ステージング環境での最終確認
+           - 本番環境へのデプロイ
+        3. リリース後確認
+           - 本番環境での動作確認
+           - 監視項目の確認
+        4. プロジェクト完了処理
+           - ドキュメント最終更新
+           - 振り返り（レトロスペクティブ）
+           - 親Issueクローズ
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: "📦 成果物"
+      value: |
+        - [ ] リリースノート
+        - [ ] デプロイ完了報告
+        - [ ] 本番動作確認報告
+        - [ ] プロジェクト完了報告書
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "✅ 完了条件"
+      value: |
+        - [ ] 本番環境にデプロイ完了
+        - [ ] 本番環境で日英切り替えが動作確認済み
+        - [ ] リリースノートが公開されている
+        - [ ] 親Issueを含む全Issueがクローズ
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "🔗 依存関係"
+      value: |
+        **先行タスク**: #受け入れテスト
+        **後続タスク**: なし（プロジェクト完了）
+
+  - type: textarea
+    id: rollback
+    attributes:
+      label: "🔄 ロールバック手順"
+      value: |
+        問題発生時のロールバック手順:
+        
+        1. 直前のリリースタグにロールバック
+        2. デプロイパイプラインで前バージョンをデプロイ
+        3. 本番環境での動作確認
+        4. ステークホルダーへの報告

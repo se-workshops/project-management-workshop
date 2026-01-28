@@ -1,0 +1,80 @@
+name: "📋 [実装・レビュー] 工程タスク"
+description: "実装・レビューフェーズ用テンプレート"
+title: "[多言語対応] 実装・レビュー"
+labels: ["task", "implementation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ 設定忘れずに
+        - **Milestone**: 該当するマイルストーンを設定
+        - **親Issue**: 親プロジェクトIssueにリンク
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 工程: 4. 実装・レビュー
+
+  - type: input
+    id: duration
+    attributes:
+      label: "⏱️ 想定期間"
+      value: "5日"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 タスク概要"
+      value: |
+        多言語対応のコード実装とコードレビューを実施する。
+        
+        ### 実施内容
+        1. i18nライブラリのセットアップ
+           - react-i18nextのインストール・設定
+           - 言語検出設定
+        2. 翻訳ファイルの作成
+           - 日本語翻訳ファイル（既存テキストの抽出）
+           - 英語翻訳ファイル
+        3. コンポーネントの多言語対応
+           - useTranslation hookの適用
+           - 翻訳キーへの置き換え
+        4. 言語切り替えUI実装
+           - ヘッダーに言語切り替えボタン追加
+           - 言語設定の永続化（LocalStorage）
+        5. 商品データの多言語対応
+           - バックエンドAPI修正
+           - 言語別商品データの追加
+        6. コードレビュー実施
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: "📦 成果物"
+      value: |
+        - [ ] i18n設定ファイル（`src/i18n/index.js`）
+        - [ ] 翻訳ファイル（`src/locales/ja/*.json`, `src/locales/en/*.json`）
+        - [ ] 言語切り替えコンポーネント（`LanguageSwitcher.jsx`）
+        - [ ] 修正済みコンポーネント一式
+        - [ ] 多言語対応商品データ
+        - [ ] Pull Request（レビュー済み）
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "✅ 完了条件"
+      value: |
+        - [ ] 日本語・英語の切り替えが動作する
+        - [ ] 全UIテキストが翻訳キーに置き換えられている
+        - [ ] 言語設定がLocalStorageに保存される
+        - [ ] コードレビューが完了している
+        - [ ] PRがマージされている
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "🔗 依存関係"
+      value: |
+        **先行タスク**: #詳細設計
+        **後続タスク**: 単体テスト

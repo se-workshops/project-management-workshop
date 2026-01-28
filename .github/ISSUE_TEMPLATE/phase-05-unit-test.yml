@@ -1,0 +1,71 @@
+name: "📋 [単体テスト] 工程タスク"
+description: "単体テストフェーズ用テンプレート"
+title: "[多言語対応] 単体テスト"
+labels: ["task", "testing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ 設定忘れずに
+        - **Milestone**: 該当するマイルストーンを設定
+        - **親Issue**: 親プロジェクトIssueにリンク
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 工程: 5. 単体テスト
+
+  - type: input
+    id: duration
+    attributes:
+      label: "⏱️ 想定期間"
+      value: "2日"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 タスク概要"
+      value: |
+        多言語対応したコンポーネントの単体テストを実施する。
+        
+        ### 実施内容
+        1. 翻訳ファイルの検証
+           - 全キーの存在確認（日英両方）
+           - 欠落キーのチェック
+        2. コンポーネント単体テスト
+           - 言語切り替え時の表示確認
+           - 翻訳キーが正しく適用されているか
+        3. 言語切り替えUIのテスト
+           - 切り替え動作確認
+           - LocalStorage保存確認
+        4. 日付・数値フォーマットのテスト
+           - ロケール別フォーマット確認
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: "📦 成果物"
+      value: |
+        - [ ] 単体テスト仕様書
+        - [ ] 単体テストコード
+        - [ ] テスト結果報告書
+        - [ ] 不具合一覧（発見時）
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "✅ 完了条件"
+      value: |
+        - [ ] 全コンポーネントの単体テストが完了
+        - [ ] テスト成功率100%
+        - [ ] 発見された不具合が修正済み
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "🔗 依存関係"
+      value: |
+        **先行タスク**: #実装・レビュー
+        **後続タスク**: 結合テスト

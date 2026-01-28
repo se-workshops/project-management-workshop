@@ -1,0 +1,74 @@
+name: "📋 [システムテスト] 工程タスク"
+description: "システムテストフェーズ用テンプレート"
+title: "[多言語対応] システムテスト"
+labels: ["task", "testing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ 設定忘れずに
+        - **Milestone**: 該当するマイルストーンを設定
+        - **親Issue**: 親プロジェクトIssueにリンク
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 工程: 7. システムテスト
+
+  - type: input
+    id: duration
+    attributes:
+      label: "⏱️ 想定期間"
+      value: "2日"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 タスク概要"
+      value: |
+        システム全体として多言語対応が正しく動作するかテストする。
+        
+        ### 実施内容
+        1. エンドツーエンド（E2E）テスト
+           - 日本語モードでの全機能動作確認
+           - 英語モードでの全機能動作確認
+        2. クロスブラウザテスト
+           - Chrome, Firefox, Edge, Safari
+        3. レスポンシブテスト
+           - デスクトップ、タブレット、モバイル
+        4. パフォーマンステスト
+           - 言語切り替え時のレスポンス時間
+           - 翻訳ファイル読み込み時間
+        5. アクセシビリティ確認
+           - lang属性の設定確認
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: "📦 成果物"
+      value: |
+        - [ ] システムテスト仕様書
+        - [ ] E2Eテストスクリプト（任意）
+        - [ ] クロスブラウザテスト結果
+        - [ ] パフォーマンス測定結果
+        - [ ] システムテスト結果報告書
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "✅ 完了条件"
+      value: |
+        - [ ] 日英両言語で全機能が正常動作
+        - [ ] 主要ブラウザで動作確認済み
+        - [ ] レスポンシブ対応が正常
+        - [ ] パフォーマンス基準を満たしている
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "🔗 依存関係"
+      value: |
+        **先行タスク**: #結合テスト
+        **後続タスク**: 受け入れテスト

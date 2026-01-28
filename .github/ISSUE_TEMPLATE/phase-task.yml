@@ -1,0 +1,65 @@
+name: "📋 工程タスク"
+description: "各工程用Sub-Issueテンプレート"
+title: "[] "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ 設定忘れずに
+        
+        **このIssue作成後、以下を設定してください：**
+        - **Milestone**: 該当するマイルストーンを設定
+        - **親Issue**: 親プロジェクトIssueにリンク
+        - **Projects**: GitHub Projects に追加
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: "📌 工程"
+      description: "該当する工程を選択してください"
+      options:
+        - "1. 要件定義"
+        - "2. 基本設計"
+        - "3. 詳細設計"
+        - "4. 実装・レビュー"
+        - "5. 単体テスト"
+        - "6. 結合テスト"
+        - "7. システムテスト"
+        - "8. 受け入れテスト"
+        - "9. リリース"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 タスク概要"
+      description: "この工程で実施する内容を記載"
+      value: |
+        <!-- 工程に応じて以下のテンプレートを使用してください -->
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: "📦 成果物"
+      description: "この工程の成果物を記載"
+      value: |
+        - [ ] 
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "✅ 完了条件"
+      description: "この工程の完了条件"
+      value: |
+        - [ ] 
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "🔗 依存関係"
+      description: "先行タスクや依存するIssue"
+      value: |
+        **先行タスク**: なし
+        **後続タスク**: なし

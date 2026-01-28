@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📚 設計ドキュメント
+    url: https://github.com/tsLab-1/project-management-workshop/tree/main/docs
+    about: 要件定義書・基本設計書・詳細設計書を確認できます
+  - name: 📋 GitHub Projects で工程管理
+    url: https://docs.github.com/ja/issues/planning-and-tracking-with-projects
+    about: GitHub Projects を使った工程管理の方法を確認できます

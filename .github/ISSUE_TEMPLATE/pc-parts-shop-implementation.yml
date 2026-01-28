@@ -1,0 +1,170 @@
+name: "🛒 PC Parts Shop 実装タスク"
+description: "パソコン用品ECサイト（React SPA）の実装タスク"
+title: "[実装] PC Parts Shop - React SPA ECサイトの構築"
+labels: ["enhancement", "coding-agent"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 概要
+        パソコン用品を扱うECサイト（SPA）をReactで実装してください。
+        
+        **重要**: 設計書は `docs/` フォルダにあります。
+        - `docs/requirement.md` - 要件定義書
+        - `docs/basic-architecture.md` - 基本設計書
+        - `docs/detailed-architecture.md` - 詳細設計書
+
+  - type: textarea
+    id: task-description
+    attributes:
+      label: "📋 実装タスク"
+      value: |
+        ## 実装するアプリケーション
+        
+        パソコン用品（CPU、GPU、メモリ、ストレージ等）を扱うECサイトのSPAアプリケーションを作成してください。
+        
+        ### 技術スタック
+        - **フロントエンド**: React 18 + React Router 6 + Vite
+        - **バックエンド**: Node.js + Express.js
+        - **スタイリング**: CSS Modules または Tailwind CSS
+        - **データ**: JSONファイルによるダミーデータ（インメモリ管理）
+        
+        ### 実装する機能
+        
+        #### 1. 認証機能
+        - ログイン画面（メール・パスワード入力）
+        - ログアウト機能
+        - ダミーユーザーによる認証
+        
+        #### 2. 商品機能
+        - 商品一覧表示（カード形式のグリッド表示）
+        - 商品詳細表示（スペック、価格、在庫、説明）
+        - カテゴリフィルター（CPU、GPU、メモリ、ストレージ、マザーボード、電源、PCケース、周辺機器）
+        - キーワード検索
+        - 並び替え（価格順、名前順）
+        
+        #### 3. カート機能
+        - 商品をカートに追加
+        - カート内容表示（商品一覧、合計金額）
+        - 数量変更
+        - 商品削除
+        - カートクリア
+        
+        #### 4. 注文機能
+        - 注文確認画面
+        - 注文確定（在庫減少処理）
+        - 注文履歴表示
+        
+        ### ディレクトリ構成
+        
+        ```
+        /
+        ├── package.json
+        ├── vite.config.js
+        ├── src/                      # フロントエンド
+        │   ├── main.jsx
+        │   ├── App.jsx
+        │   ├── index.css
+        │   ├── components/
+        │   │   ├── common/           # Button, Input, Modal, Loading
+        │   │   ├── layout/           # Header, Footer
+        │   │   ├── product/          # ProductCard, ProductList, ProductFilter
+        │   │   └── cart/             # CartItem, CartSummary
+        │   ├── pages/
+        │   │   ├── LoginPage.jsx
+        │   │   ├── ProductListPage.jsx
+        │   │   ├── ProductDetailPage.jsx
+        │   │   ├── CartPage.jsx
+        │   │   ├── CheckoutPage.jsx
+        │   │   ├── OrderCompletePage.jsx
+        │   │   └── OrderHistoryPage.jsx
+        │   ├── hooks/                # useAuth, useCart, useProducts
+        │   ├── context/              # AuthContext, CartContext
+        │   ├── services/             # API通信サービス
+        │   └── utils/                # ユーティリティ関数
+        └── server/                   # バックエンド
+            ├── index.js
+            ├── routes/
+            ├── controllers/
+            ├── services/
+            ├── data/                 # ダミーデータJSON
+            │   ├── users.json
+            │   ├── products.json
+            │   └── categories.json
+            ├── store/                # インメモリストア
+            └── middleware/
+        ```
+        
+        ### ダミーデータ
+        
+        #### ユーザー（3件）
+        | メール | パスワード | 名前 |
+        |--------|-----------|------|
+        | tanaka@example.com | password123 | 田中太郎 |
+        | yamada@example.com | password123 | 山田花子 |
+        | suzuki@example.com | password123 | 鈴木一郎 |
+        
+        #### カテゴリ（8件）
+        - CPU, GPU, メモリ, ストレージ, マザーボード, 電源ユニット, PCケース, 周辺機器
+        
+        #### 商品（各カテゴリ3-5件、計30件程度）
+        - CPU: Intel Core i9-14900K (¥89,800), AMD Ryzen 9 7950X (¥79,800) など
+        - GPU: NVIDIA RTX 4090 (¥298,000), RTX 4080 (¥198,000) など
+        - その他カテゴリも同様にパソコンパーツの実データに基づく商品
+        
+        ### API エンドポイント
+        
+        | メソッド | パス | 説明 |
+        |---------|------|------|
+        | POST | /api/auth/login | ログイン |
+        | POST | /api/auth/logout | ログアウト |
+        | GET | /api/auth/me | 現在のユーザー取得 |
+        | GET | /api/products | 商品一覧 |
+        | GET | /api/products/:id | 商品詳細 |
+        | GET | /api/categories | カテゴリ一覧 |
+        | GET | /api/cart | カート取得 |
+        | POST | /api/cart/items | カートに追加 |
+        | PUT | /api/cart/items/:productId | 数量変更 |
+        | DELETE | /api/cart/items/:productId | カートから削除 |
+        | DELETE | /api/cart | カートクリア |
+        | GET | /api/orders | 注文履歴 |
+        | POST | /api/orders | 注文作成 |
+        
+        ### 重要な実装ポイント
+        
+        1. **データ永続化なし**: サーバーメモリ上にデータを保持し、サーバー再起動時にダミーデータから復元
+        2. **セッション管理**: 簡易的なセッションベース認証（メモリ上で管理）
+        3. **在庫管理**: 注文時に在庫を減少させる
+        4. **レスポンシブ対応**: デスクトップ・タブレット・モバイル対応
+        5. **日本語UI**: すべてのテキストは日本語で表示
+        
+        ### 起動方法
+        
+        ```bash
+        # 依存関係インストール
+        npm install
+        
+        # 開発サーバー起動（フロント＋バック同時）
+        npm run dev
+        ```
+        
+        ### 完了条件
+        
+        - [ ] すべてのページが正常に表示される
+        - [ ] ログイン・ログアウトが動作する
+        - [ ] 商品一覧・詳細が表示される
+        - [ ] カテゴリフィルター・検索が動作する
+        - [ ] カートへの追加・削除・数量変更が動作する
+        - [ ] 注文処理が完了する
+        - [ ] 注文履歴が表示される
+        - [ ] `npm run dev` で起動できる
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: "📝 補足事項"
+      value: |
+        - 詳細な設計は `docs/` フォルダの設計書を参照してください
+        - 画像はプレースホルダー（https://via.placeholder.com/300x200）を使用してください
+        - エラーハンドリングは基本的なものを実装してください
+        - テストコードは不要です

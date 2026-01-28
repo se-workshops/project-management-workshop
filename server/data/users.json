@@ -1,0 +1,47 @@
+[
+  {
+    "id": "user-001",
+    "username": "tanaka",
+    "email": "tanaka@example.com",
+    "password": "password123",
+    "firstName": "太郎",
+    "lastName": "田中",
+    "address": {
+      "postalCode": "100-0001",
+      "prefecture": "東京都",
+      "city": "千代田区",
+      "street": "丸の内1-1-1"
+    },
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "user-002",
+    "username": "yamada",
+    "email": "yamada@example.com",
+    "password": "password123",
+    "firstName": "花子",
+    "lastName": "山田",
+    "address": {
+      "postalCode": "150-0001",
+      "prefecture": "東京都",
+      "city": "渋谷区",
+      "street": "神宮前1-1-1"
+    },
+    "createdAt": "2024-01-02T00:00:00Z"
+  },
+  {
+    "id": "user-003",
+    "username": "suzuki",
+    "email": "suzuki@example.com",
+    "password": "password123",
+    "firstName": "一郎",
+    "lastName": "鈴木",
+    "address": {
+      "postalCode": "220-0001",
+      "prefecture": "神奈川県",
+      "city": "横浜市",
+      "street": "みなとみらい1-1-1"
+    },
+    "createdAt": "2024-01-03T00:00:00Z"
+  }
+]
