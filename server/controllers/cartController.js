@@ -41,8 +41,11 @@ export const getCart = (req, res) => {
   }
 };
 
-export const addToCart = (req, res) => {
+export const addToCart = async (req, res) => {
   try {
+    // Simulate slow response (20 seconds delay)
+    await new Promise(resolve => setTimeout(resolve, 20000));
+    
     const { productId, quantity } = req.body;
     
     if (!productId || !quantity || quantity < 1) {
