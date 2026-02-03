@@ -1,0 +1,33 @@
+name: タスク
+description: 開発タスクや作業項目を作成する
+title: "タスク"
+labels: ["task"]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: "タスクの概要"
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: "目的"
+    validations:
+      required: false
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "実施内容"
+    validations:
+      required: false
+
+  - type: input
+    id: estimate
+    attributes:
+      label: "⏱️ 想定期間"
+      placeholder: "例: 2日"
+    validations:
+      required: false
